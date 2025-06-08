@@ -27,7 +27,7 @@ const Events = () => {
 
     app.addEventListener("scroll", handleScroll);
     return () => app.removeEventListener("scroll", handleScroll);
-  }, [loading])
+  }, [loading, hasMore])
 
 
   useEffect(() => {
