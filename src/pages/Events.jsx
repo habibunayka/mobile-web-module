@@ -34,7 +34,7 @@ const Events = () => {
     const fetch = async () => {
       try {
         console.log("Fetching...");
-        const data = await api.get(`/module_mobile_api.php?beginning_date=${start}&ending_date=${end}&page=${page}`)
+        const data = await api.get(`/index.php?beginning_date=${start}&ending_date=${end}&page=${page}`)
         const response = data.data.events
         if (response.length === 0) {
           setHasMore(false);
